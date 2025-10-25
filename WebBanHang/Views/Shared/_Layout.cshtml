@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li>@Html.ActionLink("Iphone", "Iphone", "Product")</li>
+                <li>@Html.ActionLink("Ipad", "Ipad", "Product")</li>
+                <li>@Html.ActionLink("Mac", "Mac", "Product")</li>
+                <li>@Html.ActionLink("Watch", "Watch", "Product")</li>
+                <li>@Html.ActionLink("Âm thanh", "Audio", "Product")</li>
+                <li>@Html.ActionLink("Phụ kiện", "Accessory", "Product")</li>
+            </ul>
+            <div class="search-bar">
+                <form action="/TimKiem" method="get">
+                    <input type="text" name="query" placeholder="Tìm kiếm..." />
+                    <button type="submit">Tìm</button>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My Website</p>
+    </footer>
+</body>
+</html>
