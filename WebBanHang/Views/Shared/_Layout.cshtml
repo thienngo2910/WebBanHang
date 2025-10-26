@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
                 <li>@Html.ActionLink("Iphone", "Iphone", "Product")</li>
@@ -18,13 +18,16 @@
                 <li>@Html.ActionLink("Watch", "Watch", "Product")</li>
                 <li>@Html.ActionLink("Âm thanh", "Audio", "Product")</li>
                 <li>@Html.ActionLink("Phụ kiện", "Accessory", "Product")</li>
+                <li>
+                    <div class="search-bar">
+                        <form action="/TimKiem" method="get">
+                            <input type="text" name="query" placeholder="Tìm kiếm..." />
+                            <button type="submit">Tìm</button>
+                        </form>
+                    </div>
+                </li>
             </ul>
-            <div class="search-bar">
-                <form action="/TimKiem" method="get">
-                    <input type="text" name="query" placeholder="Tìm kiếm..." />
-                    <button type="submit">Tìm</button>
-                </form>
-            </div>
+            
 
         </nav>
     </header>
