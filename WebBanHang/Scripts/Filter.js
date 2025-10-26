@@ -5,7 +5,7 @@ iphoneSeriesList.forEach(series => {
     const subMenu = document.getElementById(`${series}Series`);
 
     if (mainCheckbox && subMenu) {
-        mainCheckbox.addEventListener('change', function () {
+        mainCheckbox.addEventListener('change', function() {
             subMenu.style.display = this.checked ? 'block' : 'none';
         });
     }
