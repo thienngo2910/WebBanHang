@@ -11,4 +11,58 @@
     border-radius: 15px;
     border: 2px solid #000;
 }
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
 
+.nav-list {
+    display: flex;
+    justify-content: center; /* căn giữa toàn bộ menu */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+
+    .nav-list  {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        display: block;
+    }
+
+        .nav-list hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+/* 🎯 Tùy chỉnh thanh tìm kiếm */
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #ffcc00;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .search-bar button:hover {
+        background-color: #e6b800;
+    }

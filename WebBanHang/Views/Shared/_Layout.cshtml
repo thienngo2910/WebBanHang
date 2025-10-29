@@ -6,11 +6,12 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/MyStyle.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <ul class="nav-list">
                 <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
                 <li>@Html.ActionLink("Iphone", "Iphone", "Product")</li>
                 <li>@Html.ActionLink("Ipad", "Ipad", "Product")</li>
@@ -26,9 +27,7 @@
                         </form>
                     </div>
                 </li>
-            </ul>
-            
-
+            </ul>          
         </nav>
     </header>
 
